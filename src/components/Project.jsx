@@ -149,7 +149,6 @@ const Portfolio = (props) => {
                   display: "inline-block",
                   width: 20,
                   height: 20,
-                  background: "#ccc",
                   borderRadius: "50%",
                 }}
               >
@@ -184,16 +183,14 @@ const Portfolio = (props) => {
               data-category={project.category}
               key={project.title + idx}
             >
-              <a href={project.Live} target="_blank" rel="noopener noreferrer">
-                <figure className="project-img">
+              <figure className="project-img">
+                <a href={project.Live} target="_blank" rel="noopener noreferrer">
                   <div className="project-item-icon-box">
-                    {/* Placeholder for ion-icon */}
                     <span
                       style={{
                         display: "inline-block",
                         width: 20,
                         height: 20,
-                        // background: "#c",
                         borderRadius: "50%",
                       }}
                     >
@@ -204,33 +201,36 @@ const Portfolio = (props) => {
                     src={project.img}
                     alt={project.title}
                     loading="lazy"
-                    // onError={e => e.target.src = placeholder}
                   />
-                </figure>
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-category">
-                  {CATEGORIES.find((c) => c.key === project.category)?.label ||
-                    project.category}
-                </p>
-                <p className="project-title">{project.content}</p>
+                </a>
+              </figure>
+              <h3 className="project-title">
+                <a href={project.Live} target="_blank" rel="noopener noreferrer">
+                  {project.title}
+                </a>
+              </h3>
+              <p className="project-category">
+                {CATEGORIES.find((c) => c.key === project.category)?.label ||
+                  project.category}
+              </p>
+              <p className="project-title">{project.content}</p>
 
-                <div className="project-links">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaGithub /> GitHub Repo
-                  </a>
-                  <a
-                    href={project.Live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaEye /> Live Demo
-                  </a>
-                </div>
-              </a>
+              <div className="project-links">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub /> GitHub Repo
+                </a>
+                <a
+                  href={project.Live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaEye /> Live Demo
+                </a>
+              </div>
             </li>
           ))}
         </ul>
