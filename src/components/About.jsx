@@ -5,57 +5,57 @@ import { SiLeetcode ,SiGeeksforgeeks  } from "react-icons/si";
 const tools = [
   {
     name: "Node.js",
-    avatar: "/src/assets/images/node.png",
+    avatar: "assets/images/node.png",
     // name: "Node.jsS",
   },
   {
     name: "Next.js",
-    avatar: "/src/assets/images/skill1.png",
+    avatar: "assets/images/skill1.png",
     // name: "Next.js",
   },
   {
     name: "Typescript",
-    avatar: "/src/assets/images/ts.png",
+    avatar: "assets/images/ts.png",
     // text: "Typescript",
   },
   {
     name: "React.js",
-    avatar: "/src/assets/images/react.png",
+    avatar: "assets/images/react.png",
     // text: "React.js",
   },
   {
     name: "Tailwind CSS",
-    avatar: "/src/assets/images/tailwind.png",
+    avatar: "assets/images/tailwind.png",
     // text: "Tailwind CSS",
   },
   {
     name: "PostgreSQL",
-    avatar: "/src/assets/images/postgre.png",
+    avatar: "assets/images/postgre.png",
     // text: "PostgreSQL",
   },
   {
     name: "MongoDB",
-    avatar: "/src/assets/images/mongo.png",
+    avatar: "assets/images/mongo.png",
     // text: "MongoDB",
   },
   {
     name: "Redux Toolkit",
-    avatar: "/src/assets/images/redux.png",
+    avatar: "assets/images/redux.png",
     // text: "Redux Toolkit",
   },
   {
     name: "Shadcn UI",
-    avatar: "/src/assets/images/shadcn.png",
+    avatar: "assets/images/shadcn.png",
     // text: "Shadcn UI",
   },
   {
     name: "Git",
-    avatar: "/src/assets/images/git.png",
+    avatar: "assets/images/git.png",
     // text: "Git",
   },
   {
     name: "Postman",
-    avatar: "/src/assets/images/postman.png",
+    avatar: "assets/images/postman.png",
     // text: "Postman",
   },
 ];
@@ -81,7 +81,6 @@ const socials = [
  
 ];
 
-const placeholder = "/src/assets/images/avatar-1.png";
 
 const About = (props) => {
   // const [modalOpen, setModalOpen] = useState(false);
@@ -126,7 +125,7 @@ const About = (props) => {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="/src/assets/images/icon-dev.svg"
+                src="assets/images/icon-dev.svg"
                 alt="design icon"
                 width="40"
                 // onError={(e) => (e.target.src = placeholder)}
@@ -142,7 +141,7 @@ const About = (props) => {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="/src/assets/images/icon-dev.svg"
+                src="assets/images/icon-dev.svg"
                 alt="camera icon"
                 width="40"
               />

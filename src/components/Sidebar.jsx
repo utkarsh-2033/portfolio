@@ -9,7 +9,7 @@ const Sidebar = () => {
     <>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src="/src/assets/images/avatar-1.png" alt="Avatar Placeholder" width="80" />
+          <img src="assets/images/avatar-1.png" alt="Avatar Placeholder" width="80" />
         </figure>
         <div className="info-content">
           <h1 className="name" title="utkarsh">Utkarsh Gupta</h1>
