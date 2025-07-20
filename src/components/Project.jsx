@@ -5,7 +5,7 @@ const PROJECTS = [
   {
     title: "ClipIQ",
     category: "Full Stack",
-    content: "",
+    content: "A cross-platform SaaS platform for seamless screen recording, real-time video sharing, and AI-assisted collaboration—designed for distributed teams, educators, and product creators.",
     img: "assets/images/clipiq.png",
     github: "https://github.com/utkarsh-2033/ClipIQ",
     Live: "https://clipiq.vercel.app/",
@@ -13,7 +13,7 @@ const PROJECTS = [
   {
     title: "SkillSathiAI",
     category: "Full Stack",
-    content: "",
+    content: "SkillSathi AI is an AI-driven platform that empowers users to assess their skills, identify gaps, and receive personalized learning recommendations to achieve career goals effectively.",
     img: "assets/images/skillsathi.png",
     github: "https://github.com/utkarsh-2033/SkillSathiAi",
     Live: "https://skill-sathi-ai.vercel.app/",
@@ -21,7 +21,7 @@ const PROJECTS = [
   {
     title: "Interviewify",
     category: "Full Stack",
-    content: "",
+    content: "Interviewify is an AI-powered mock interview platform that helps users practice technical interviews by generating role-specific questions and providing real-time AI-driven feedback and ratings.",
     img: "assets/images/interview.png",
     github: "https://github.com/utkarsh-2033/Interviewify",
     Live: "https://interviewify-nine.vercel.app/",
@@ -29,7 +29,7 @@ const PROJECTS = [
   {
     title: "YogaFusion",
     category: "Full Stack",
-    content: "",
+    content: "YogaFusion is an online platform for shopping yoga products and reading yoga related blogs.",
     img: "assets/images/yoga.png",
     github: "https://github.com/utkarsh-2033/YogaFusion-A-smart-Yoga-shop",
     Live: "https://yoga-fusion-yoga-products-sto-git-39d370-utkarsh-2033s-projects.vercel.app/",

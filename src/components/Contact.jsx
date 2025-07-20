@@ -1,21 +1,45 @@
 import React, { useState } from 'react';
 import { MdEmail } from "react-icons/md";
+import emailjs from 'emailjs-com';
+
+const SERVICE_ID = 'service_si9euas';
+const TEMPLATE_ID = 'template_2rxhyj4';
+const USER_ID = 'gjKyakrF1GM0qDOmn';
 
 const Contact = (props) => {
   const [form, setForm] = useState({ fullname: '', email: '', message: '' });
   const [isValid, setIsValid] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     const newForm = { ...form, [name]: value };
     setForm(newForm);
-    // Simple validation: all fields non-empty and email contains '@'
     setIsValid(
       newForm.fullname.trim() &&
       newForm.email.trim() &&
       newForm.email.includes('@') &&
       newForm.message.trim()
     );
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setSending(true);
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+      from_name: form.fullname, // for {{from_name}}
+      phone: form.fullname,     // for {{phone}}
+      message: form.message,    // for {{message}}
+      email: form.email,        // for {{email}}
+    }, USER_ID)
+      .then((result) => {
+        alert('Message sent successfully!');
+        setForm({ fullname: '', email: '', message: '' });
+        setIsValid(false);
+      }, (error) => {
+        alert('Failed to send message. Please try again.');
+      })
+      .finally(() => setSending(false));
   };
 
   return (
@@ -32,7 +56,7 @@ const Contact = (props) => {
       </section>
       <section className="contact-form">
         <h3 className="h3 form-title">Contact Form</h3>
-        <form action="#" className="form" data-form onSubmit={e => e.preventDefault()}>
+        <form action="#" className="form" data-form onSubmit={sendEmail}>
           <div className="input-wrapper">
             <input
               type="text"
@@ -67,14 +91,13 @@ const Contact = (props) => {
           <button
             className="form-btn"
             type="submit"
-            disabled={!isValid}
+            disabled={!isValid || sending}
             data-form-btn
           >
-            {/* Placeholder for ion-icon */}
             <span style={{ display: 'inline-block', width: 20, height: 20, borderRadius: '50%', marginRight: 8 }}>
               <MdEmail />
             </span>
-            <span>Send Message</span>
+            <span>{sending ? 'Sending...' : 'Send Message'}</span>
           </button>
         </form>
       </section>

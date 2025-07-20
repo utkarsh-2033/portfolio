@@ -1,10 +1,10 @@
 import React from 'react';
-import { FaGithub, FaInstagram, FaLocationArrow, FaMailBulk, FaPhone } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLocationArrow, FaMailBulk, FaPhone, FaChevronDown, FaChevronUp, FaDownload } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-const placeholder = '/src/assets/images/placeholder.png';
+import { MdEmail } from 'react-icons/md';
 
-const Sidebar = () => {
+const Sidebar = ({ onSidebarToggle, sidebarActive }) => {
   return (
     <>
       <div className="sidebar-info">
@@ -13,11 +13,13 @@ const Sidebar = () => {
         </figure>
         <div className="info-content">
           <h1 className="name" title="utkarsh">Utkarsh Gupta</h1>
-          <p className="title">Web developer</p>
+          <a href="https://drive.google.com/file/d/1C28q2Cquhj3rrYJ2zgsTZUYlw-V72Avw/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="title">Resume <FaDownload/></a>
         </div>
-        <button className="info_more-btn" data-sidebar-btn>
-          <span>Show Details</span>
-          </button>
+        <button className="info_more-btn" onClick={onSidebarToggle} aria-label="Toggle sidebar details">
+          <span style={{display: 'flex', alignItems: 'center'}}>
+            {sidebarActive ? <FaChevronUp /> : <FaChevronDown />}
+          </span>
+        </button>
       </div>
       <div className="sidebar-info_more">
         <div className="separator"></div>
@@ -26,12 +28,17 @@ const Sidebar = () => {
             <div className="icon-box">
               {/* Placeholder for ion-icon */}
               <span style={{display: 'inline-block', width: 20, height: 20, borderRadius: '50%'}}>
-                <FaMailBulk />
+                <MdEmail />
               </span>
             </div>
             <div className="contact-info">
               <p className="contact-title">Email</p>
-              <a href="mailto:richard@example.com" className="contact-link">utkarshg2033@gmail.com</a>
+              <a
+                href="mailto:utkarshg2033@gmail.com"
+                className="contact-link"
+              >
+                utkarshg2033@gmail.com
+              </a>
             </div>
           </li>
           <li className="contact-item">
@@ -55,7 +62,7 @@ const Sidebar = () => {
             </div>
             <div className="contact-info">
               <p className="contact-title">Birthday</p>
-              <time dateTime="1982-06-23">March 20, 2005</time>
+              <time dateTime="1982-06-23"></time>
             </div>
           </li> */}
           <li className="contact-item">
