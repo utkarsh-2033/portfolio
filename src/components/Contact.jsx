@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { MdEmail } from "react-icons/md";
 import emailjs from 'emailjs-com';
 
-const SERVICE_ID = 'service_si9euas';
-const TEMPLATE_ID = 'template_2rxhyj4';
-const USER_ID = 'gjKyakrF1GM0qDOmn';
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID; 
+console.log(SERVICE_ID); // For debugging purposes, you can remove this later
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ;
+const USER_ID = import.meta.env.VITE_EMAILJS_USER_ID
 
 const Contact = (props) => {
   const [form, setForm] = useState({ fullname: '', email: '', message: '' });
