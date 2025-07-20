@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaLocationArrow, FaMailBulk, FaPhone } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLocationArrow, FaMailBulk, FaPhone } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 const placeholder = '/src/assets/images/placeholder.png';
@@ -25,7 +25,7 @@ const Sidebar = () => {
           <li className="contact-item">
             <div className="icon-box">
               {/* Placeholder for ion-icon */}
-              <span style={{display: 'inline-block', width: 20, height: 20, background: '#ccc', borderRadius: '50%'}}>
+              <span style={{display: 'inline-block', width: 20, height: 20, borderRadius: '50%'}}>
                 <FaMailBulk />
               </span>
             </div>
@@ -37,7 +37,7 @@ const Sidebar = () => {
           <li className="contact-item">
             <div className="icon-box">
               {/* Placeholder for ion-icon */}
-              <span style={{display: 'inline-block', width: 20, height: 20, background: '#ccc', borderRadius: '50%'}}>
+              <span style={{display: 'inline-block', width: 20, height: 20, borderRadius: '50%'}}>
                 <FaPhone />
               </span>
             </div>
@@ -60,7 +60,7 @@ const Sidebar = () => {
           </li> */}
           <li className="contact-item">
             <div className="icon-box">
-              <span style={{display: 'inline-block', width: 20, height: 20, background: '#ccc', borderRadius: '50%'}}>
+              <span style={{display: 'inline-block', width: 20, height: 20, borderRadius: '50%'}}>
                 <FaLocationArrow />
               </span>
             </div>
@@ -73,23 +73,19 @@ const Sidebar = () => {
         <div className="separator"></div>
         <ul className="social-list">
           <li className="social-item">
-            <a href="#" className="social-link">
-              {/* Placeholder for ion-icon */}
+            <a href="https://www.linkedin.com/in/utkarsh-kr-gupta-myprofile/" className="social-link">
               <FaLinkedin />
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
-              {/* Placeholder for ion-icon */}
+            <a href="https://www.instagram.com/uttkarshh._?igsh=MTZpZWFhMnZnN2k3eQ==" className="social-link">
               <FaInstagram />
 
-              {/* <span style={{display: 'inline-block', width: 20, height: 20, background: '#ccc', borderRadius: '50%'}}></span> */}
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
-              {/* Placeholder for ion-icon */}
-              <FaFacebookSquare />
+            <a href="https://github.com/utkarsh-2033" className="social-link">
+              <FaGithub />
             </a>
           </li>
         </ul>

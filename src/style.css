@@ -3,25 +3,8 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
-    /**
-     * colors
-     */
-  
-    /* gradient */
   
     --bg-gradient-onyx: linear-gradient(
       to bottom right, 
@@ -112,13 +95,6 @@
   }
   
   
-  
-  
-  
-  /*-----------------------------------*\
-    #RESET
-  \*-----------------------------------*/
-  
   *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -157,13 +133,6 @@
   
   body { background: var(--smoky-black); }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #REUSED STYLE
-  \*-----------------------------------*/
   
   .sidebar,
   article {
@@ -293,26 +262,13 @@
   }
   
   
-  
-  
-  
-  /*-----------------------------------*\
-    #MAIN
-  \*-----------------------------------*/
-  
   main {
     margin: 15px 12px;
     margin-bottom: 75px;
     min-width: 259px;
   }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #SIDEBAR
-  \*-----------------------------------*/
+   /* #SIDEBAR */
   
   .sidebar {
     margin-bottom: 15px;
@@ -629,10 +585,10 @@
   
   
   /**
-   * #testimonials-modal
+   * #modal
    */
   
-  .modal-container {
+  /* .modal-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -740,10 +696,10 @@
     font-weight: var(--fw-300);
     line-height: 1.6;
   }
-  
+   */
   
   /**
-   * #clients 
+   * #Accounts 
    */
   
   .accounts { margin-bottom: 15px; }
@@ -1133,7 +1089,7 @@
     #BLOG
   \*-----------------------------------*/
   
-  .blog-posts { margin-bottom: 10px; }
+  /* .blog-posts { margin-bottom: 10px; }
   
   .blog-posts-list {
     display: grid;
@@ -1212,7 +1168,7 @@
     font-weight: var(--fw-300);
     line-height: 1.6;
   }
-  
+   */
   
   
   

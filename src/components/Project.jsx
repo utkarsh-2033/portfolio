@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaEye, FaGithub } from "react-icons/fa";
+import { FaEye, FaGithub, FaChevronDown } from "react-icons/fa";
 
 const PROJECTS = [
   {
@@ -153,7 +153,7 @@ const Portfolio = (props) => {
                   borderRadius: "50%",
                 }}
               >
-                <FaEye />
+                <FaChevronDown />
               </span>
             </div>
           </button>
@@ -193,10 +193,12 @@ const Portfolio = (props) => {
                         display: "inline-block",
                         width: 20,
                         height: 20,
-                        background: "#ccc",
+                        // background: "#c",
                         borderRadius: "50%",
                       }}
-                    ></span>
+                    >
+                      <FaEye/>
+                    </span>
                   </div>
                   <img
                     src={project.img}

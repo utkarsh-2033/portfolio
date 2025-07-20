@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MdEmail } from "react-icons/md";
 
 const Contact = (props) => {
   const [form, setForm] = useState({ fullname: '', email: '', message: '' });
@@ -24,9 +25,7 @@ const Contact = (props) => {
       </header>
       <section className="mapbox" data-mapbox>
         <figure>
-          {/* Placeholder for map iframe */}
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.7546273270095!2d77.35511836061272!3d28.60713704635109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce56c9045ce01%3A0x987f0ba9a5d3e794!2z4KS44KS_4KSy4KS-4KSIIOCkn-CljeCksOClh-CkqOCkv-CkguCklyDgpLjgpYfgpILgpJ_gpLA!5e0!3m2!1sen!2sin!4v1752959568843!5m2!1sen!2sin" 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23768.911070957707!2d77.36888555986434!3d28.597572454346583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5992452d761%3A0xaaa44725147c1507!2sJSS%20Academy%20of%20Technical%20Education!5e0!3m2!1sen!2sin!4v1753003226631!5m2!1sen!2sin"
             width="400" height="300" loading="lazy" title="Map Placeholder"
           ></iframe>
         </figure>
@@ -72,7 +71,9 @@ const Contact = (props) => {
             data-form-btn
           >
             {/* Placeholder for ion-icon */}
-            <span style={{ display: 'inline-block', width: 20, height: 20, background: '#ccc', borderRadius: '50%', marginRight: 8 }}></span>
+            <span style={{ display: 'inline-block', width: 20, height: 20, borderRadius: '50%', marginRight: 8 }}>
+              <MdEmail />
+            </span>
             <span>Send Message</span>
           </button>
         </form>
