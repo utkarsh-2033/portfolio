@@ -3,9 +3,8 @@ import { MdEmail } from "react-icons/md";
 import emailjs from 'emailjs-com';
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID; 
-console.log(SERVICE_ID); // For debugging purposes, you can remove this later
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ;
-const USER_ID = import.meta.env.VITE_EMAILJS_USER_ID
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
 
 const Contact = (props) => {
   const [form, setForm] = useState({ fullname: '', email: '', message: '' });
@@ -41,6 +40,7 @@ const Contact = (props) => {
         alert('Failed to send message. Please try again.');
       })
       .finally(() => setSending(false));
+      console.log('Email sent successfully:', result.text);
   };
 
   return (
