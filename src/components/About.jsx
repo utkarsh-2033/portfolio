@@ -44,6 +44,16 @@ const tools = [
     // text: "Redux Toolkit",
   },
   {
+    name: "Java",
+    avatar: "assets/images/java.png",
+    // text: "Java",
+  },
+  {
+    name: "Electron.js",
+    avatar: "assets/images/electron.png",
+    // text: "Electron.js",
+  },
+  {
     name: "Shadcn UI",
     avatar: "assets/images/shadcn.png",
     // text: "Shadcn UI",
