@@ -13,7 +13,7 @@ const Sidebar = ({ onSidebarToggle, sidebarActive }) => {
         </figure>
         <div className="info-content">
           <h1 className="name" title="utkarsh">Utkarsh Gupta</h1>
-          <a href="https://drive.google.com/file/d/1C28q2Cquhj3rrYJ2zgsTZUYlw-V72Avw/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="title">Resume <FaDownload/></a>
+          <a href="https://drive.google.com/file/d/1Z1y-7pv0rHXquGxMUQz_hmYCx5b9aXIs/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="title">Resume <FaDownload/></a>
         </div>
         <button className="info_more-btn" onClick={onSidebarToggle} aria-label="Toggle sidebar details">
           <span style={{display: 'flex', alignItems: 'center'}}>

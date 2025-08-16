@@ -69,12 +69,40 @@ const Resume = (props) => (
       </div>
       <ol className="timeline-list">
         <li className="timeline-item">
+          <h4 className="h4 timeline-item-title">Full Stack Developer</h4>
+          <span>Aug 2025 — ongoing</span>
+          <ul className="timeline-text">
+            <li>
+              <FaArrowRight />
+              Currently spearheading the development of a fully responsive
+              company website by transforming complex Figma designs into
+              pixel-perfect, production-ready React.js pages. Leveraging
+              TailwindCSS for clean, scalable UI components and Framer Motion
+              for high-end, fluid animations, ensuring an engaging user
+              experience. Focused on design fidelity, seamless interactivity,
+              and performance optimization to deliver a modern, visually
+              striking, and business-impactful product.
+            </li>
+            {/* <li>
+              <FaArrowRight /> Improved user experience and performance by
+              optimizing data handling and component reusability.
+            </li>
+            <li>
+              <FaArrowRight /> Worked with Next.js, Tailwind CSS, and Redux to
+              develop scalable solutions.
+            </li> */}
+          </ul>
+        </li>
+      </ol>
+      <ol className="timeline-list">
+        <li className="timeline-item">
           <h4 className="h4 timeline-item-title">React Developer</h4>
           <span>Dec 2024 — Jan 2025</span>
           <ul className="timeline-text">
             <li>
-              <FaArrowRight /> Contributed to dashboard development, implementing
-              Redux for efficient state management and seamless data flow.
+              <FaArrowRight /> Contributed to dashboard development,
+              implementing Redux for efficient state management and seamless
+              data flow.
             </li>
             <li>
               <FaArrowRight /> Improved user experience and performance by
@@ -106,12 +134,14 @@ const Resume = (props) => (
       </div>
       <ol className="timeline-list">
         <li className="timeline-item">
-          <h4 className="h4 timeline-item-title">Programmer & Web Developer </h4>
-          <span>Microsoft Mobile Innovation Lab — College Tech Society  </span>
+          <h4 className="h4 timeline-item-title">
+            Programmer & Web Developer{" "}
+          </h4>
+          <span>Microsoft Mobile Innovation Lab — College Tech Society </span>
           <ul className="timeline-text">
             <li>
-              <FaArrowRight />  Contributed to
- technical projects and organized workshops , seminars and, coding events.
+              <FaArrowRight /> Contributed to technical projects and organized
+              workshops , seminars and, coding events.
             </li>
             {/* <li>
               <FaArrowRight /> Improved user experience and performance by
@@ -159,7 +189,8 @@ const Resume = (props) => (
           </h4>
           <span>Reliance Foundation</span>
           <p className="timeline-text">
-            Selected Among 50000 students across India based on online assessments tests and academic excellence.
+            Selected Among 50000 students across India based on online
+            assessments tests and academic excellence.
           </p>
         </li>
 
