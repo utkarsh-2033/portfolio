@@ -20,6 +20,81 @@ const Resume = (props) => (
             }}
           ></span>
         </div>
+        <h3 className="h3">Experience</h3>
+      </div>
+      <ol className="timeline-list">
+        <li className="timeline-item">
+          <h4 className="h4 timeline-item-title">Full Stack Developer</h4>
+          <span>Slayyers</span>
+          <span>Aug 2025 — ongoing</span>
+          <ul className="timeline-text">
+            <li>
+              <FaArrowRight />
+              Currently spearheading the development of a fully responsive
+              company website by transforming complex Figma designs into
+              pixel-perfect, production-ready React.js pages. Leveraging
+              TailwindCSS for clean, scalable UI components and Framer Motion
+              for high-end, fluid animations, ensuring an engaging user
+              experience. Focused on design fidelity, seamless interactivity,
+              and performance optimization to deliver a modern, visually
+              striking, and business-impactful product.
+            </li>
+            {/* <li>
+                        <FaArrowRight /> Improved user experience and performance by
+                        optimizing data handling and component reusability.
+                      </li>
+                      <li>
+                        <FaArrowRight /> Worked with Next.js, Tailwind CSS, and Redux to
+                        develop scalable solutions.
+                      </li> */}
+          </ul>
+        </li>
+      </ol>
+      <br />
+      <ol className="timeline-list">
+        <li className="timeline-item">
+          <h4 className="h4 timeline-item-title">React Developer</h4>
+          <span>FrugalX</span>
+          <span>Dec 2024 — Jan 2025</span>
+          <ul className="timeline-text">
+            <li>
+              <FaArrowRight /> Engineered a full-featured AI tools dashboard (summarizer, story
+              generator, etc.) with advanced filters, favorites, and usage
+              analytics for an engaging user experience.
+            </li>
+            <li>
+              <FaArrowRight /> Implemented persistent user preferences and
+              seamless state management using Redux, crafting well-structured
+              slices and reducers for scalable data flow.
+            </li>
+            <li>
+              <FaArrowRight /> Optimized performance and reusability in
+              colloboration with team by designing modular components in Next.js
+              with TailwindCSS, ensuring a smooth and responsive interface.
+            </li>
+            <li>
+              <FaArrowRight /> Collaborated with the team to deliver scalable,
+              production-ready solutions, aligning technical design with product
+              requirements and enhancing overall UX.
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+    <section className="timeline">
+      <div className="title-wrapper">
+        <div className="icon-box">
+          {/* Placeholder for ion-icon */}
+          <span
+            style={{
+              display: "inline-block",
+              width: 20,
+              height: 20,
+              background: "#ccc",
+              borderRadius: "50%",
+            }}
+          ></span>
+        </div>
         <h3 className="h3">Education</h3>
       </div>
       <ol className="timeline-list">
@@ -48,71 +123,6 @@ const Resume = (props) => (
           <span>2018 — 2020</span>
           <p className="timeline-text">Class 10th - ICSE</p>
           <p className="timeline-text">98.4 %</p>
-        </li>
-      </ol>
-    </section>
-    <section className="timeline">
-      <div className="title-wrapper">
-        <div className="icon-box">
-          {/* Placeholder for ion-icon */}
-          <span
-            style={{
-              display: "inline-block",
-              width: 20,
-              height: 20,
-              background: "#ccc",
-              borderRadius: "50%",
-            }}
-          ></span>
-        </div>
-        <h3 className="h3">Experience</h3>
-      </div>
-      <ol className="timeline-list">
-        <li className="timeline-item">
-          <h4 className="h4 timeline-item-title">Full Stack Developer</h4>
-          <span>Aug 2025 — ongoing</span>
-          <ul className="timeline-text">
-            <li>
-              <FaArrowRight />
-              Currently spearheading the development of a fully responsive
-              company website by transforming complex Figma designs into
-              pixel-perfect, production-ready React.js pages. Leveraging
-              TailwindCSS for clean, scalable UI components and Framer Motion
-              for high-end, fluid animations, ensuring an engaging user
-              experience. Focused on design fidelity, seamless interactivity,
-              and performance optimization to deliver a modern, visually
-              striking, and business-impactful product.
-            </li>
-            {/* <li>
-              <FaArrowRight /> Improved user experience and performance by
-              optimizing data handling and component reusability.
-            </li>
-            <li>
-              <FaArrowRight /> Worked with Next.js, Tailwind CSS, and Redux to
-              develop scalable solutions.
-            </li> */}
-          </ul>
-        </li>
-      </ol>
-      <ol className="timeline-list">
-        <li className="timeline-item">
-          <h4 className="h4 timeline-item-title">React Developer</h4>
-          <span>Dec 2024 — Jan 2025</span>
-          <ul className="timeline-text">
-            <li>
-              <FaArrowRight /> Contributed to dashboard development,
-              implementing Redux for efficient state management and seamless
-              data flow.
-            </li>
-            <li>
-              <FaArrowRight /> Improved user experience and performance by
-              optimizing data handling and component reusability.
-            </li>
-            <li>
-              <FaArrowRight /> Worked with Next.js, Tailwind CSS, and Redux to
-              develop scalable solutions.
-            </li>
-          </ul>
         </li>
       </ol>
     </section>
